@@ -69,75 +69,87 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
 
-
-
-
-
-
-
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
 ```
-org 100h
-mov al,032h;
-mov bl,al;
-add bl,al;
-mov [0243h],bl;
-
-ret
+MOV AL,74H
+MOV BL,69H
+ADD AL,BL
+HLT
 ```
-
-
 ## Output  
-
- ![306232579-0d855108-e4c7-4bc7-a624-a0786a9dc267](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/b4d21409-1f39-473f-b25d-dc4a6fd7c519)
+![1](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/d10c9662-401a-4f39-a50a-22e730c823d5)
 
 ## Subtraction   of 8 bit numbers  ALP 
 ```
-org 100h
-mov al,032h;
-mov bl,al;
-add bl,al;
-mov [0243h],bl;
+MOV AL,84H
+MOV BL,63H
+SUB AL,BL
+HLT
 
-ret
 ```
- 
 ## Output  
-
-![306232597-379b39e1-a12b-418d-8d77-8b95e7e18067](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/36d36234-49da-485f-a9ac-d5680d7ab2ce)
+![2](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/a13930e9-005d-4312-a867-011ec465b22d)
 
 ## Multiplication alp 
 ```
-org 100h
-mov al,03h;
-mov bl,02h;
-mul bl;  
-mov [0321h],al
-
-ret  ;
+MOV AL,75H
+MOV BL,32H
+MUL BL
+HLT
 ```
  ## Output  
+![3](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/61272bcc-5773-42d6-800c-ba2c15f796b0)
 
-![306232635-a07b31a6-e21b-4013-ba96-93ffe28ad0a0](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/4d795546-1f12-4a90-b92c-7f94cee3a502)
-
-## Division alp 
+## DIVISION of 8 bit ALP
 ```
-org 100h
-
-; add your code here
-mov al,04h;
-mov bl,02h;
-div bl;  
-mov [0321h],al
-
-ret  ;
+MOV AL,68H
+MOV BL,18H
+DIV BL
+HLT
 ```
 ## Output  
+![4](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/1f20576c-3f1f-4d33-9252-abf5f7acc44f)
 
-![306232676-9253cbc0-7631-4a3c-bddc-00f76ddf0911](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/eaa76467-2eba-46a6-b034-11e601c703e5)
+## AND of 8 bit ALP
+```
+MOV AL,33H
+MOV BL,44H
+AND AL,BL
+HLT
+```
+## Output
+![5](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/da0ec872-95ff-4d75-8923-6c8d2f002739)
 
+## OR of 8 bit ALP
+```
+MOV AL,45H
+MOV BL,66H
+OR AL,BL
+HLT
+```
+## Output
+![6](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/fa599619-17bc-416a-b662-94c2197c0c42)
+
+## NOT of 8 bit ALP
+```
+MOV AL,65H
+NOT AL
+HLT
+```
+## Output
+![8](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/7ca3fde6-6b68-44c7-a4e6-3fb8e2ec15e9)
+
+## XOR of 8 bit ALP
+```
+MOV AL,66H
+MOV BL,77H
+XOR AL,BL
+HLT
+```
+## Output
+![7](https://github.com/lisianathiruselvan/EXPERIMENT--01-ALP-FOR-8086/assets/119389971/3c2e879d-70a2-4bbb-bc5f-ce2e1a5d83c4)
 
 ## Result :
  
